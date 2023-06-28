@@ -9,7 +9,7 @@ import ModernRIBs
  
  */
 
-protocol FinanceHomeInteractable: Interactable, SuperPayDashboardListener {
+protocol FinanceHomeInteractable: Interactable, SuperPayDashboardListener, CardOnFileDashboardListener {
     var router: FinanceHomeRouting? { get set }
     var listener: FinanceHomeListener? { get set }
 }
@@ -20,6 +20,7 @@ protocol FinanceHomeViewControllable: ViewControllable {
 }
 
 final class FinanceHomeRouter: ViewableRouter<FinanceHomeInteractable, FinanceHomeViewControllable>, FinanceHomeRouting {
+
     
     
     /*
@@ -29,16 +30,20 @@ final class FinanceHomeRouter: ViewableRouter<FinanceHomeInteractable, FinanceHo
      Builder는 Buildable이라는 인터페이스를 받고있는데, 이 Router에서 Buildable 프로토콜 타입으로 받도록 수정이 필요하다~
      */
     private var superPayDashboardBuildable: SuperPayDashboardBuildable
+    private var cardOnFileDashboardBuildable: CardOnFileDashboardBuildable
     
     // child 중복 attach 방지용
     private var superPayRouting: Routing?
+    private var cardOnFileRouting: Routing?
     
     init(
         interactor: FinanceHomeInteractable,
         viewController: FinanceHomeViewControllable,
-        superPayDashboardBuilable: SuperPayDashboardBuildable
+        superPayDashboardBuilable: SuperPayDashboardBuildable,
+        cardOnFileDashboardBuildale: CardOnFileDashboardBuildable
     ) {
         self.superPayDashboardBuildable = superPayDashboardBuilable
+        self.cardOnFileDashboardBuildable = cardOnFileDashboardBuildale
         super.init(interactor: interactor, viewController: viewController)
         interactor.router = self
     }
@@ -70,4 +75,20 @@ final class FinanceHomeRouter: ViewableRouter<FinanceHomeInteractable, FinanceHo
         self.superPayRouting = router
         attachChild(router)
     }
+    
+    func attachCardOnFileDashboard() {
+        if cardOnFileRouting != nil { return }
+        
+        let router = cardOnFileDashboardBuildable.build(withListener: interactor)
+        
+        let dashboard = router.viewControllable
+        viewController.addDashboard(dashboard)
+       
+        /*
+         똑같은 자식을 2번 attach하지 않기 위해 방어 로직을 추가해줘야 합니다.
+         */
+        self.cardOnFileRouting = router
+        attachChild(router)
+    }
+    
 }

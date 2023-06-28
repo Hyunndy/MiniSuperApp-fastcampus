@@ -10,8 +10,10 @@ import ModernRIBs
  자식 리블렛을 붙이기 위해 Router에게 일을 시키려면 이 protocol에 먼저 선언해준다.
  */
 protocol FinanceHomeRouting: ViewableRouting {
-    // TODO: Declare methods the interactor can invoke to manage sub-tree via the router.
+    
+    /// SuperPayDashboard RIB 붙이기
     func attachSuperPayDashboard()
+    func attachCardOnFileDashboard()
 }
 
 protocol FinanceHomePresentable: Presentable {
@@ -46,6 +48,7 @@ final class FinanceHomeInteractor: PresentableInteractor<FinanceHomePresentable>
         // TODO: Implement business logic here.
         
         router?.attachSuperPayDashboard()
+        router?.attachCardOnFileDashboard()
     }
     
     override func willResignActive() {

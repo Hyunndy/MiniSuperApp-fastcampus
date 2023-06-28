@@ -14,18 +14,26 @@ protocol FinanceHomeDependency: Dependency {
  - 자식에게 줄 변경 불가 Observable
  - 내가 갖고있을 값 변경 가능 BehaviorRelay
  
+ 자식인 CardDashboard에서 API에서 받아온 PaymentMethod 리스트가 필요하다.
+ 여기서 API 구현 객체를 생성해서 넘겨준다!
+ 
  */
-final class FinanceHomeComponent: Component<FinanceHomeDependency>, SuperPayDashboardDependency {
+final class FinanceHomeComponent: Component<FinanceHomeDependency>, SuperPayDashboardDependency, CardOnFileDashboardDependency {
+    
     var banlance: Observable<Double> {
         return balanceRelay.asObservable()
     }
     
     private let balanceRelay: BehaviorRelay<Double>
+    var cardOnFileRepository: CardOnFileRepository
+    
     
     init(
         dependency: FinanceHomeDependency,
-        balanceRelay: BehaviorRelay<Double>) {
+        balanceRelay: BehaviorRelay<Double>,
+        cardOnFileRepository: CardOnFileRepository) {
             self.balanceRelay = balanceRelay
+            self.cardOnFileRepository = cardOnFileRepository
             super.init(dependency: dependency)
         }
     
@@ -68,9 +76,14 @@ final class FinanceHomeBuilder: Builder<FinanceHomeDependency>, FinanceHomeBuild
          그래서 자식들의 Dependency를 Component가 Conform 하도록 한다.
          
          */
+        
+        /*
+         API 구현체인 Imp도 여기서 구현체를 직접! 만들어서 넣어진다.
+         */
         let component = FinanceHomeComponent(
             dependency: dependency,
-            balanceRelay: balanceRelay
+            balanceRelay: balanceRelay,
+            cardOnFileRepository: CardOnFileRepositoryImp()
         )
         let viewController = FinanceHomeViewController()
         let interactor = FinanceHomeInteractor(presenter: viewController)
@@ -82,11 +95,12 @@ final class FinanceHomeBuilder: Builder<FinanceHomeDependency>, FinanceHomeBuild
          */
         
         let superPayDashboardBuilder = SuperPayDashboardBuilder(dependency: component)
-        
+        let cardOnFileDashboardBuilder = CardOnFileDashboardBuilder(dependency: component)
         
         return FinanceHomeRouter(
             interactor: interactor,
             viewController: viewController,
-            superPayDashboardBuilable: superPayDashboardBuilder)
+            superPayDashboardBuilable: superPayDashboardBuilder,
+            cardOnFileDashboardBuildale: cardOnFileDashboardBuilder)
     }
 }
