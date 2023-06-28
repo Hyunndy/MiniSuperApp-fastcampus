@@ -1,16 +1,23 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "ModernRIBs",
-        "repositoryURL": "https://github.com/DevYeom/ModernRIBs",
-        "state": {
-          "branch": null,
-          "revision": "5e0a67365a1fb18ca06b919dbf53608843ddc284",
-          "version": "1.0.1"
-        }
+  "pins" : [
+    {
+      "identity" : "modernribs",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/DevYeom/ModernRIBs",
+      "state" : {
+        "revision" : "5e0a67365a1fb18ca06b919dbf53608843ddc284",
+        "version" : "1.0.1"
       }
-    ]
-  },
-  "version": 1
+    },
+    {
+      "identity" : "rxswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ReactiveX/RxSwift.git",
+      "state" : {
+        "revision" : "9dcaa4b333db437b0fbfaf453fad29069044a8b4",
+        "version" : "6.6.0"
+      }
+    }
+  ],
+  "version" : 2
 }

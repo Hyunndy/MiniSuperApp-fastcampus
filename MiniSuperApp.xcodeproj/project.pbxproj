@@ -7,84 +7,97 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F57EBE542738468700FE9319 /* UIImage+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57EBE512738468700FE9319 /* UIImage+Utils.swift */; };
-		F57EBE552738468700FE9319 /* Array+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57EBE522738468700FE9319 /* Array+Utils.swift */; };
-		F57EBE562738468700FE9319 /* UITableView+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57EBE532738468700FE9319 /* UITableView+Utils.swift */; };
-		F57F6AE826DB4A2700C0117D /* FinanceHomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57F6AE426DB4A2700C0117D /* FinanceHomeRouter.swift */; };
-		F57F6AE926DB4A2700C0117D /* FinanceHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57F6AE526DB4A2700C0117D /* FinanceHomeViewController.swift */; };
-		F57F6AEA26DB4A2700C0117D /* FinanceHomeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57F6AE626DB4A2700C0117D /* FinanceHomeBuilder.swift */; };
-		F57F6AEB26DB4A2700C0117D /* FinanceHomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57F6AE726DB4A2700C0117D /* FinanceHomeInteractor.swift */; };
-		F57F6AF026DB4A2D00C0117D /* ProfileHomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57F6AEC26DB4A2D00C0117D /* ProfileHomeRouter.swift */; };
-		F57F6AF126DB4A2D00C0117D /* ProfileHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57F6AED26DB4A2D00C0117D /* ProfileHomeViewController.swift */; };
-		F57F6AF226DB4A2D00C0117D /* ProfileHomeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57F6AEE26DB4A2D00C0117D /* ProfileHomeBuilder.swift */; };
-		F57F6AF326DB4A2D00C0117D /* ProfileHomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57F6AEF26DB4A2D00C0117D /* ProfileHomeInteractor.swift */; };
-		F57F6AFE26DB4CD700C0117D /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57F6AFD26DB4CD700C0117D /* RootTabBarController.swift */; };
-		F5829F5926DB2BC400BFA8CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5829F5826DB2BC400BFA8CD /* AppDelegate.swift */; };
+		02D61B5E2A4C8F000030D276 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 02D61B5D2A4C8F000030D276 /* RxCocoa */; };
+		02D61B602A4C8F000030D276 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 02D61B5F2A4C8F000030D276 /* RxRelay */; };
+		02D61B622A4C8F000030D276 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 02D61B612A4C8F000030D276 /* RxSwift */; };
+		02D61B942A4C8F380030D276 /* AppComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D61B642A4C8F370030D276 /* AppComponent.swift */; };
+		02D61B952A4C8F380030D276 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D61B652A4C8F370030D276 /* AppDelegate.swift */; };
+		02D61B962A4C8F380030D276 /* ProfileHomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D61B672A4C8F370030D276 /* ProfileHomeRouter.swift */; };
+		02D61B972A4C8F380030D276 /* ProfileHomeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D61B682A4C8F370030D276 /* ProfileHomeBuilder.swift */; };
+		02D61B982A4C8F380030D276 /* ProfileHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D61B692A4C8F370030D276 /* ProfileHomeViewController.swift */; };
+		02D61B992A4C8F380030D276 /* ProfileHomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D61B6A2A4C8F370030D276 /* ProfileHomeInteractor.swift */; };
+		02D61B9A2A4C8F380030D276 /* PushModalPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D61B6C2A4C8F370030D276 /* PushModalPresentationController.swift */; };
+		02D61B9B2A4C8F380030D276 /* UIColor+Super.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D61B6D2A4C8F370030D276 /* UIColor+Super.swift */; };
+		02D61B9C2A4C8F380030D276 /* UIView+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D61B6E2A4C8F370030D276 /* UIView+Utils.swift */; };
+		02D61B9D2A4C8F380030D276 /* UIColor+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D61B6F2A4C8F370030D276 /* UIColor+Utils.swift */; };
+		02D61B9E2A4C8F380030D276 /* RIBs+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D61B702A4C8F370030D276 /* RIBs+Utils.swift */; };
+		02D61B9F2A4C8F380030D276 /* UITableView+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D61B712A4C8F370030D276 /* UITableView+Utils.swift */; };
+		02D61BA02A4C8F380030D276 /* Array+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D61B722A4C8F370030D276 /* Array+Utils.swift */; };
+		02D61BA12A4C8F380030D276 /* UIImage+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D61B732A4C8F370030D276 /* UIImage+Utils.swift */; };
+		02D61BA22A4C8F380030D276 /* SuperPayDashboardInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D61B762A4C8F370030D276 /* SuperPayDashboardInteractor.swift */; };
+		02D61BA32A4C8F380030D276 /* SuperPayDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D61B772A4C8F370030D276 /* SuperPayDashboardViewController.swift */; };
+		02D61BA42A4C8F380030D276 /* SuperPayDashboardBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D61B782A4C8F370030D276 /* SuperPayDashboardBuilder.swift */; };
+		02D61BA52A4C8F380030D276 /* SuperPayDashboardRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D61B792A4C8F370030D276 /* SuperPayDashboardRouter.swift */; };
+		02D61BA62A4C8F380030D276 /* FinanceHomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D61B7A2A4C8F370030D276 /* FinanceHomeRouter.swift */; };
+		02D61BA72A4C8F380030D276 /* FinanceHomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D61B7B2A4C8F370030D276 /* FinanceHomeInteractor.swift */; };
+		02D61BA82A4C8F380030D276 /* FinanceHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D61B7C2A4C8F370030D276 /* FinanceHomeViewController.swift */; };
+		02D61BA92A4C8F380030D276 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02D61B7D2A4C8F370030D276 /* Storyboard.storyboard */; };
+		02D61BAA2A4C8F380030D276 /* FinanceHomeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D61B7E2A4C8F370030D276 /* FinanceHomeBuilder.swift */; };
+		02D61BAB2A4C8F380030D276 /* AppHomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D61B802A4C8F370030D276 /* AppHomeInteractor.swift */; };
+		02D61BAC2A4C8F380030D276 /* AppHomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D61B812A4C8F370030D276 /* AppHomeRouter.swift */; };
+		02D61BAD2A4C8F380030D276 /* AppHomeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D61B822A4C8F370030D276 /* AppHomeBuilder.swift */; };
+		02D61BAE2A4C8F380030D276 /* HomeWidgetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D61B832A4C8F370030D276 /* HomeWidgetModel.swift */; };
+		02D61BAF2A4C8F380030D276 /* HomeWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D61B852A4C8F370030D276 /* HomeWidgetView.swift */; };
+		02D61BB02A4C8F380030D276 /* AppHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D61B862A4C8F370030D276 /* AppHomeViewController.swift */; };
+		02D61BB12A4C8F380030D276 /* AppRootInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D61B882A4C8F370030D276 /* AppRootInteractor.swift */; };
+		02D61BB22A4C8F380030D276 /* AppRootBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D61B892A4C8F370030D276 /* AppRootBuilder.swift */; };
+		02D61BB32A4C8F380030D276 /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D61B8A2A4C8F370030D276 /* RootTabBarController.swift */; };
+		02D61BB42A4C8F380030D276 /* AppRootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D61B8B2A4C8F370030D276 /* AppRootRouter.swift */; };
+		02D61BB52A4C8F380030D276 /* TransportHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D61B8D2A4C8F380030D276 /* TransportHomeViewController.swift */; };
+		02D61BB62A4C8F380030D276 /* TransportHomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D61B8E2A4C8F380030D276 /* TransportHomeRouter.swift */; };
+		02D61BB72A4C8F380030D276 /* TransportHomeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D61B8F2A4C8F380030D276 /* TransportHomeBuilder.swift */; };
+		02D61BB82A4C8F380030D276 /* TransportHomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D61B902A4C8F380030D276 /* TransportHomeInteractor.swift */; };
+		02D61BB92A4C8F380030D276 /* RideTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D61B922A4C8F380030D276 /* RideTypeView.swift */; };
+		02D61BBA2A4C8F380030D276 /* SuperPayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D61B932A4C8F380030D276 /* SuperPayView.swift */; };
 		F5829F6226DB2BC500BFA8CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5829F6126DB2BC500BFA8CD /* Assets.xcassets */; };
 		F5829F6526DB2BC500BFA8CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5829F6326DB2BC500BFA8CD /* LaunchScreen.storyboard */; };
 		F5829F6E26DB2DE900BFA8CD /* ModernRIBs in Frameworks */ = {isa = PBXBuildFile; productRef = F5829F6D26DB2DE900BFA8CD /* ModernRIBs */; };
-		F5829F7426DB34AA00BFA8CD /* AppRootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5829F7026DB34AA00BFA8CD /* AppRootRouter.swift */; };
-		F5829F7626DB34AA00BFA8CD /* AppRootBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5829F7226DB34AA00BFA8CD /* AppRootBuilder.swift */; };
-		F5829F7726DB34AA00BFA8CD /* AppRootInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5829F7326DB34AA00BFA8CD /* AppRootInteractor.swift */; };
-		F5829F7926DB397300BFA8CD /* AppComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5829F7826DB397300BFA8CD /* AppComponent.swift */; };
-		F5EAA219270B395900EF2B70 /* HomeWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EAA213270B395800EF2B70 /* HomeWidgetView.swift */; };
-		F5EAA21A270B395900EF2B70 /* AppHomeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EAA214270B395800EF2B70 /* AppHomeBuilder.swift */; };
-		F5EAA21B270B395900EF2B70 /* AppHomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EAA215270B395900EF2B70 /* AppHomeInteractor.swift */; };
-		F5EAA21C270B395900EF2B70 /* AppHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EAA216270B395900EF2B70 /* AppHomeViewController.swift */; };
-		F5EAA21D270B395900EF2B70 /* HomeWidgetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EAA217270B395900EF2B70 /* HomeWidgetModel.swift */; };
-		F5EAA21E270B395900EF2B70 /* AppHomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EAA218270B395900EF2B70 /* AppHomeRouter.swift */; };
-		F5EAA220270B39DC00EF2B70 /* PushModalPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EAA21F270B39DC00EF2B70 /* PushModalPresentationController.swift */; };
-		F5EAA229270B3A4500EF2B70 /* TransportHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EAA222270B3A4500EF2B70 /* TransportHomeViewController.swift */; };
-		F5EAA22A270B3A4500EF2B70 /* TransportHomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EAA223270B3A4500EF2B70 /* TransportHomeRouter.swift */; };
-		F5EAA22B270B3A4500EF2B70 /* TransportHomeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EAA224270B3A4500EF2B70 /* TransportHomeBuilder.swift */; };
-		F5EAA22C270B3A4500EF2B70 /* TransportHomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EAA225270B3A4500EF2B70 /* TransportHomeInteractor.swift */; };
-		F5EAA22D270B3A4500EF2B70 /* RideTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EAA227270B3A4500EF2B70 /* RideTypeView.swift */; };
-		F5EAA22E270B3A4500EF2B70 /* SuperPayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EAA228270B3A4500EF2B70 /* SuperPayView.swift */; };
-		F5EAA230270B3A7100EF2B70 /* RIBs+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EAA22F270B3A7100EF2B70 /* RIBs+Utils.swift */; };
-		F5EAA232270B3A8F00EF2B70 /* UIView+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EAA231270B3A8F00EF2B70 /* UIView+Utils.swift */; };
-		F5EAA234270B3A9A00EF2B70 /* UIColor+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EAA233270B3A9A00EF2B70 /* UIColor+Utils.swift */; };
-		F5EAA236270B3AA600EF2B70 /* UIColor+Super.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EAA235270B3AA600EF2B70 /* UIColor+Super.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F57EBE512738468700FE9319 /* UIImage+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Utils.swift"; sourceTree = "<group>"; };
-		F57EBE522738468700FE9319 /* Array+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Utils.swift"; sourceTree = "<group>"; };
-		F57EBE532738468700FE9319 /* UITableView+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Utils.swift"; sourceTree = "<group>"; };
-		F57F6AE426DB4A2700C0117D /* FinanceHomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceHomeRouter.swift; sourceTree = "<group>"; };
-		F57F6AE526DB4A2700C0117D /* FinanceHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceHomeViewController.swift; sourceTree = "<group>"; };
-		F57F6AE626DB4A2700C0117D /* FinanceHomeBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceHomeBuilder.swift; sourceTree = "<group>"; };
-		F57F6AE726DB4A2700C0117D /* FinanceHomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceHomeInteractor.swift; sourceTree = "<group>"; };
-		F57F6AEC26DB4A2D00C0117D /* ProfileHomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHomeRouter.swift; sourceTree = "<group>"; };
-		F57F6AED26DB4A2D00C0117D /* ProfileHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHomeViewController.swift; sourceTree = "<group>"; };
-		F57F6AEE26DB4A2D00C0117D /* ProfileHomeBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHomeBuilder.swift; sourceTree = "<group>"; };
-		F57F6AEF26DB4A2D00C0117D /* ProfileHomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHomeInteractor.swift; sourceTree = "<group>"; };
-		F57F6AFD26DB4CD700C0117D /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
+		02D61B642A4C8F370030D276 /* AppComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppComponent.swift; sourceTree = "<group>"; };
+		02D61B652A4C8F370030D276 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		02D61B672A4C8F370030D276 /* ProfileHomeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileHomeRouter.swift; sourceTree = "<group>"; };
+		02D61B682A4C8F370030D276 /* ProfileHomeBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileHomeBuilder.swift; sourceTree = "<group>"; };
+		02D61B692A4C8F370030D276 /* ProfileHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileHomeViewController.swift; sourceTree = "<group>"; };
+		02D61B6A2A4C8F370030D276 /* ProfileHomeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileHomeInteractor.swift; sourceTree = "<group>"; };
+		02D61B6C2A4C8F370030D276 /* PushModalPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushModalPresentationController.swift; sourceTree = "<group>"; };
+		02D61B6D2A4C8F370030D276 /* UIColor+Super.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Super.swift"; sourceTree = "<group>"; };
+		02D61B6E2A4C8F370030D276 /* UIView+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Utils.swift"; sourceTree = "<group>"; };
+		02D61B6F2A4C8F370030D276 /* UIColor+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Utils.swift"; sourceTree = "<group>"; };
+		02D61B702A4C8F370030D276 /* RIBs+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RIBs+Utils.swift"; sourceTree = "<group>"; };
+		02D61B712A4C8F370030D276 /* UITableView+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Utils.swift"; sourceTree = "<group>"; };
+		02D61B722A4C8F370030D276 /* Array+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Utils.swift"; sourceTree = "<group>"; };
+		02D61B732A4C8F370030D276 /* UIImage+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Utils.swift"; sourceTree = "<group>"; };
+		02D61B762A4C8F370030D276 /* SuperPayDashboardInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperPayDashboardInteractor.swift; sourceTree = "<group>"; };
+		02D61B772A4C8F370030D276 /* SuperPayDashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperPayDashboardViewController.swift; sourceTree = "<group>"; };
+		02D61B782A4C8F370030D276 /* SuperPayDashboardBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperPayDashboardBuilder.swift; sourceTree = "<group>"; };
+		02D61B792A4C8F370030D276 /* SuperPayDashboardRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperPayDashboardRouter.swift; sourceTree = "<group>"; };
+		02D61B7A2A4C8F370030D276 /* FinanceHomeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinanceHomeRouter.swift; sourceTree = "<group>"; };
+		02D61B7B2A4C8F370030D276 /* FinanceHomeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinanceHomeInteractor.swift; sourceTree = "<group>"; };
+		02D61B7C2A4C8F370030D276 /* FinanceHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinanceHomeViewController.swift; sourceTree = "<group>"; };
+		02D61B7D2A4C8F370030D276 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		02D61B7E2A4C8F370030D276 /* FinanceHomeBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinanceHomeBuilder.swift; sourceTree = "<group>"; };
+		02D61B802A4C8F370030D276 /* AppHomeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppHomeInteractor.swift; sourceTree = "<group>"; };
+		02D61B812A4C8F370030D276 /* AppHomeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppHomeRouter.swift; sourceTree = "<group>"; };
+		02D61B822A4C8F370030D276 /* AppHomeBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppHomeBuilder.swift; sourceTree = "<group>"; };
+		02D61B832A4C8F370030D276 /* HomeWidgetModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeWidgetModel.swift; sourceTree = "<group>"; };
+		02D61B852A4C8F370030D276 /* HomeWidgetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeWidgetView.swift; sourceTree = "<group>"; };
+		02D61B862A4C8F370030D276 /* AppHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppHomeViewController.swift; sourceTree = "<group>"; };
+		02D61B882A4C8F370030D276 /* AppRootInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRootInteractor.swift; sourceTree = "<group>"; };
+		02D61B892A4C8F370030D276 /* AppRootBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRootBuilder.swift; sourceTree = "<group>"; };
+		02D61B8A2A4C8F370030D276 /* RootTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
+		02D61B8B2A4C8F370030D276 /* AppRootRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRootRouter.swift; sourceTree = "<group>"; };
+		02D61B8D2A4C8F380030D276 /* TransportHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransportHomeViewController.swift; sourceTree = "<group>"; };
+		02D61B8E2A4C8F380030D276 /* TransportHomeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransportHomeRouter.swift; sourceTree = "<group>"; };
+		02D61B8F2A4C8F380030D276 /* TransportHomeBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransportHomeBuilder.swift; sourceTree = "<group>"; };
+		02D61B902A4C8F380030D276 /* TransportHomeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransportHomeInteractor.swift; sourceTree = "<group>"; };
+		02D61B922A4C8F380030D276 /* RideTypeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RideTypeView.swift; sourceTree = "<group>"; };
+		02D61B932A4C8F380030D276 /* SuperPayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperPayView.swift; sourceTree = "<group>"; };
 		F5829F5526DB2BC400BFA8CD /* MiniSuperApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniSuperApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F5829F5826DB2BC400BFA8CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5829F6126DB2BC500BFA8CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5829F6426DB2BC500BFA8CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5829F6626DB2BC500BFA8CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F5829F7026DB34AA00BFA8CD /* AppRootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootRouter.swift; sourceTree = "<group>"; };
-		F5829F7226DB34AA00BFA8CD /* AppRootBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootBuilder.swift; sourceTree = "<group>"; };
-		F5829F7326DB34AA00BFA8CD /* AppRootInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootInteractor.swift; sourceTree = "<group>"; };
-		F5829F7826DB397300BFA8CD /* AppComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppComponent.swift; sourceTree = "<group>"; };
-		F5EAA213270B395800EF2B70 /* HomeWidgetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeWidgetView.swift; sourceTree = "<group>"; };
-		F5EAA214270B395800EF2B70 /* AppHomeBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppHomeBuilder.swift; sourceTree = "<group>"; };
-		F5EAA215270B395900EF2B70 /* AppHomeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppHomeInteractor.swift; sourceTree = "<group>"; };
-		F5EAA216270B395900EF2B70 /* AppHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppHomeViewController.swift; sourceTree = "<group>"; };
-		F5EAA217270B395900EF2B70 /* HomeWidgetModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeWidgetModel.swift; sourceTree = "<group>"; };
-		F5EAA218270B395900EF2B70 /* AppHomeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppHomeRouter.swift; sourceTree = "<group>"; };
-		F5EAA21F270B39DC00EF2B70 /* PushModalPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushModalPresentationController.swift; sourceTree = "<group>"; };
-		F5EAA222270B3A4500EF2B70 /* TransportHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransportHomeViewController.swift; sourceTree = "<group>"; };
-		F5EAA223270B3A4500EF2B70 /* TransportHomeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransportHomeRouter.swift; sourceTree = "<group>"; };
-		F5EAA224270B3A4500EF2B70 /* TransportHomeBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransportHomeBuilder.swift; sourceTree = "<group>"; };
-		F5EAA225270B3A4500EF2B70 /* TransportHomeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransportHomeInteractor.swift; sourceTree = "<group>"; };
-		F5EAA227270B3A4500EF2B70 /* RideTypeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RideTypeView.swift; sourceTree = "<group>"; };
-		F5EAA228270B3A4500EF2B70 /* SuperPayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperPayView.swift; sourceTree = "<group>"; };
-		F5EAA22F270B3A7100EF2B70 /* RIBs+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RIBs+Utils.swift"; sourceTree = "<group>"; };
-		F5EAA231270B3A8F00EF2B70 /* UIView+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Utils.swift"; sourceTree = "<group>"; };
-		F5EAA233270B3A9A00EF2B70 /* UIColor+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Utils.swift"; sourceTree = "<group>"; };
-		F5EAA235270B3AA600EF2B70 /* UIColor+Super.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Super.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +105,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02D61B602A4C8F000030D276 /* RxRelay in Frameworks */,
+				02D61B5E2A4C8F000030D276 /* RxCocoa in Frameworks */,
+				02D61B622A4C8F000030D276 /* RxSwift in Frameworks */,
 				F5829F6E26DB2DE900BFA8CD /* ModernRIBs in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -99,54 +115,117 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F57F6AD926DB49E500C0117D /* AppHome */ = {
+		02D61B632A4C8F370030D276 /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
-				F5EAA214270B395800EF2B70 /* AppHomeBuilder.swift */,
-				F5EAA215270B395900EF2B70 /* AppHomeInteractor.swift */,
-				F5EAA218270B395900EF2B70 /* AppHomeRouter.swift */,
-				F5EAA216270B395900EF2B70 /* AppHomeViewController.swift */,
-				F5EAA217270B395900EF2B70 /* HomeWidgetModel.swift */,
-				F5EAA212270B395800EF2B70 /* Views */,
+				02D61B642A4C8F370030D276 /* AppComponent.swift */,
+				02D61B652A4C8F370030D276 /* AppDelegate.swift */,
 			);
-			path = AppHome;
+			name = AppDelegate;
+			path = "../../MiniSuperApp-fastcampus/MiniSuperApp/AppDelegate";
 			sourceTree = "<group>";
 		};
-		F57F6ADA26DB49EA00C0117D /* FinanceHome */ = {
+		02D61B662A4C8F370030D276 /* ProfileHome */ = {
 			isa = PBXGroup;
 			children = (
-				F57F6AE426DB4A2700C0117D /* FinanceHomeRouter.swift */,
-				F57F6AE526DB4A2700C0117D /* FinanceHomeViewController.swift */,
-				F57F6AE626DB4A2700C0117D /* FinanceHomeBuilder.swift */,
-				F57F6AE726DB4A2700C0117D /* FinanceHomeInteractor.swift */,
-			);
-			path = FinanceHome;
-			sourceTree = "<group>";
-		};
-		F57F6ADB26DB49FD00C0117D /* ProfileHome */ = {
-			isa = PBXGroup;
-			children = (
-				F57F6AEC26DB4A2D00C0117D /* ProfileHomeRouter.swift */,
-				F57F6AED26DB4A2D00C0117D /* ProfileHomeViewController.swift */,
-				F57F6AEE26DB4A2D00C0117D /* ProfileHomeBuilder.swift */,
-				F57F6AEF26DB4A2D00C0117D /* ProfileHomeInteractor.swift */,
+				02D61B672A4C8F370030D276 /* ProfileHomeRouter.swift */,
+				02D61B682A4C8F370030D276 /* ProfileHomeBuilder.swift */,
+				02D61B692A4C8F370030D276 /* ProfileHomeViewController.swift */,
+				02D61B6A2A4C8F370030D276 /* ProfileHomeInteractor.swift */,
 			);
 			path = ProfileHome;
 			sourceTree = "<group>";
 		};
-		F57F6AFF26DB585100C0117D /* Utils */ = {
+		02D61B6B2A4C8F370030D276 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				F57EBE522738468700FE9319 /* Array+Utils.swift */,
-				F57EBE512738468700FE9319 /* UIImage+Utils.swift */,
-				F57EBE532738468700FE9319 /* UITableView+Utils.swift */,
-				F5EAA235270B3AA600EF2B70 /* UIColor+Super.swift */,
-				F5EAA233270B3A9A00EF2B70 /* UIColor+Utils.swift */,
-				F5EAA231270B3A8F00EF2B70 /* UIView+Utils.swift */,
-				F5EAA21F270B39DC00EF2B70 /* PushModalPresentationController.swift */,
-				F5EAA22F270B3A7100EF2B70 /* RIBs+Utils.swift */,
+				02D61B6C2A4C8F370030D276 /* PushModalPresentationController.swift */,
+				02D61B6D2A4C8F370030D276 /* UIColor+Super.swift */,
+				02D61B6E2A4C8F370030D276 /* UIView+Utils.swift */,
+				02D61B6F2A4C8F370030D276 /* UIColor+Utils.swift */,
+				02D61B702A4C8F370030D276 /* RIBs+Utils.swift */,
+				02D61B712A4C8F370030D276 /* UITableView+Utils.swift */,
+				02D61B722A4C8F370030D276 /* Array+Utils.swift */,
+				02D61B732A4C8F370030D276 /* UIImage+Utils.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		02D61B742A4C8F370030D276 /* FinanceHome */ = {
+			isa = PBXGroup;
+			children = (
+				02D61B752A4C8F370030D276 /* SuperPayDashBoard */,
+				02D61B7A2A4C8F370030D276 /* FinanceHomeRouter.swift */,
+				02D61B7B2A4C8F370030D276 /* FinanceHomeInteractor.swift */,
+				02D61B7C2A4C8F370030D276 /* FinanceHomeViewController.swift */,
+				02D61B7D2A4C8F370030D276 /* Storyboard.storyboard */,
+				02D61B7E2A4C8F370030D276 /* FinanceHomeBuilder.swift */,
+			);
+			path = FinanceHome;
+			sourceTree = "<group>";
+		};
+		02D61B752A4C8F370030D276 /* SuperPayDashBoard */ = {
+			isa = PBXGroup;
+			children = (
+				02D61B762A4C8F370030D276 /* SuperPayDashboardInteractor.swift */,
+				02D61B772A4C8F370030D276 /* SuperPayDashboardViewController.swift */,
+				02D61B782A4C8F370030D276 /* SuperPayDashboardBuilder.swift */,
+				02D61B792A4C8F370030D276 /* SuperPayDashboardRouter.swift */,
+			);
+			path = SuperPayDashBoard;
+			sourceTree = "<group>";
+		};
+		02D61B7F2A4C8F370030D276 /* AppHome */ = {
+			isa = PBXGroup;
+			children = (
+				02D61B802A4C8F370030D276 /* AppHomeInteractor.swift */,
+				02D61B812A4C8F370030D276 /* AppHomeRouter.swift */,
+				02D61B822A4C8F370030D276 /* AppHomeBuilder.swift */,
+				02D61B832A4C8F370030D276 /* HomeWidgetModel.swift */,
+				02D61B842A4C8F370030D276 /* Views */,
+				02D61B862A4C8F370030D276 /* AppHomeViewController.swift */,
+			);
+			path = AppHome;
+			sourceTree = "<group>";
+		};
+		02D61B842A4C8F370030D276 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				02D61B852A4C8F370030D276 /* HomeWidgetView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		02D61B872A4C8F370030D276 /* AppRoot */ = {
+			isa = PBXGroup;
+			children = (
+				02D61B882A4C8F370030D276 /* AppRootInteractor.swift */,
+				02D61B892A4C8F370030D276 /* AppRootBuilder.swift */,
+				02D61B8A2A4C8F370030D276 /* RootTabBarController.swift */,
+				02D61B8B2A4C8F370030D276 /* AppRootRouter.swift */,
+			);
+			path = AppRoot;
+			sourceTree = "<group>";
+		};
+		02D61B8C2A4C8F380030D276 /* TransportHome */ = {
+			isa = PBXGroup;
+			children = (
+				02D61B8D2A4C8F380030D276 /* TransportHomeViewController.swift */,
+				02D61B8E2A4C8F380030D276 /* TransportHomeRouter.swift */,
+				02D61B8F2A4C8F380030D276 /* TransportHomeBuilder.swift */,
+				02D61B902A4C8F380030D276 /* TransportHomeInteractor.swift */,
+				02D61B912A4C8F380030D276 /* Views */,
+			);
+			path = TransportHome;
+			sourceTree = "<group>";
+		};
+		02D61B912A4C8F380030D276 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				02D61B922A4C8F380030D276 /* RideTypeView.swift */,
+				02D61B932A4C8F380030D276 /* SuperPayView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		F5829F4C26DB2BC400BFA8CD = {
@@ -168,67 +247,18 @@
 		F5829F5726DB2BC400BFA8CD /* MiniSuperApp */ = {
 			isa = PBXGroup;
 			children = (
-				F5829F7A26DB3AF900BFA8CD /* AppDelegate */,
-				F5829F6F26DB33CF00BFA8CD /* AppRoot */,
-				F57F6AD926DB49E500C0117D /* AppHome */,
-				F5EAA221270B3A4500EF2B70 /* TransportHome */,
-				F57F6ADA26DB49EA00C0117D /* FinanceHome */,
-				F57F6ADB26DB49FD00C0117D /* ProfileHome */,
-				F57F6AFF26DB585100C0117D /* Utils */,
+				02D61B632A4C8F370030D276 /* AppDelegate */,
+				02D61B7F2A4C8F370030D276 /* AppHome */,
+				02D61B872A4C8F370030D276 /* AppRoot */,
+				02D61B742A4C8F370030D276 /* FinanceHome */,
+				02D61B662A4C8F370030D276 /* ProfileHome */,
+				02D61B8C2A4C8F380030D276 /* TransportHome */,
+				02D61B6B2A4C8F370030D276 /* Utils */,
 				F5829F6126DB2BC500BFA8CD /* Assets.xcassets */,
 				F5829F6326DB2BC500BFA8CD /* LaunchScreen.storyboard */,
 				F5829F6626DB2BC500BFA8CD /* Info.plist */,
 			);
 			path = MiniSuperApp;
-			sourceTree = "<group>";
-		};
-		F5829F6F26DB33CF00BFA8CD /* AppRoot */ = {
-			isa = PBXGroup;
-			children = (
-				F5829F7026DB34AA00BFA8CD /* AppRootRouter.swift */,
-				F5829F7226DB34AA00BFA8CD /* AppRootBuilder.swift */,
-				F5829F7326DB34AA00BFA8CD /* AppRootInteractor.swift */,
-				F57F6AFD26DB4CD700C0117D /* RootTabBarController.swift */,
-			);
-			path = AppRoot;
-			sourceTree = "<group>";
-		};
-		F5829F7A26DB3AF900BFA8CD /* AppDelegate */ = {
-			isa = PBXGroup;
-			children = (
-				F5829F5826DB2BC400BFA8CD /* AppDelegate.swift */,
-				F5829F7826DB397300BFA8CD /* AppComponent.swift */,
-			);
-			path = AppDelegate;
-			sourceTree = "<group>";
-		};
-		F5EAA212270B395800EF2B70 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				F5EAA213270B395800EF2B70 /* HomeWidgetView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		F5EAA221270B3A4500EF2B70 /* TransportHome */ = {
-			isa = PBXGroup;
-			children = (
-				F5EAA222270B3A4500EF2B70 /* TransportHomeViewController.swift */,
-				F5EAA223270B3A4500EF2B70 /* TransportHomeRouter.swift */,
-				F5EAA224270B3A4500EF2B70 /* TransportHomeBuilder.swift */,
-				F5EAA225270B3A4500EF2B70 /* TransportHomeInteractor.swift */,
-				F5EAA226270B3A4500EF2B70 /* Views */,
-			);
-			path = TransportHome;
-			sourceTree = "<group>";
-		};
-		F5EAA226270B3A4500EF2B70 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				F5EAA227270B3A4500EF2B70 /* RideTypeView.swift */,
-				F5EAA228270B3A4500EF2B70 /* SuperPayView.swift */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,6 +279,9 @@
 			name = MiniSuperApp;
 			packageProductDependencies = (
 				F5829F6D26DB2DE900BFA8CD /* ModernRIBs */,
+				02D61B5D2A4C8F000030D276 /* RxCocoa */,
+				02D61B5F2A4C8F000030D276 /* RxRelay */,
+				02D61B612A4C8F000030D276 /* RxSwift */,
 			);
 			productName = SuperRedApp;
 			productReference = F5829F5526DB2BC400BFA8CD /* MiniSuperApp.app */;
@@ -279,6 +312,7 @@
 			mainGroup = F5829F4C26DB2BC400BFA8CD;
 			packageReferences = (
 				F5829F6C26DB2DE900BFA8CD /* XCRemoteSwiftPackageReference "ModernRIBs" */,
+				02D61B5C2A4C8F000030D276 /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = F5829F5626DB2BC400BFA8CD /* Products */;
 			projectDirPath = "";
@@ -296,6 +330,7 @@
 			files = (
 				F5829F6526DB2BC500BFA8CD /* LaunchScreen.storyboard in Resources */,
 				F5829F6226DB2BC500BFA8CD /* Assets.xcassets in Resources */,
+				02D61BA92A4C8F380030D276 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,40 +341,44 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5EAA229270B3A4500EF2B70 /* TransportHomeViewController.swift in Sources */,
-				F57F6AF226DB4A2D00C0117D /* ProfileHomeBuilder.swift in Sources */,
-				F5EAA22A270B3A4500EF2B70 /* TransportHomeRouter.swift in Sources */,
-				F5EAA232270B3A8F00EF2B70 /* UIView+Utils.swift in Sources */,
-				F57F6AEA26DB4A2700C0117D /* FinanceHomeBuilder.swift in Sources */,
-				F5EAA22E270B3A4500EF2B70 /* SuperPayView.swift in Sources */,
-				F5EAA220270B39DC00EF2B70 /* PushModalPresentationController.swift in Sources */,
-				F57F6AF126DB4A2D00C0117D /* ProfileHomeViewController.swift in Sources */,
-				F57F6AF326DB4A2D00C0117D /* ProfileHomeInteractor.swift in Sources */,
-				F5829F7626DB34AA00BFA8CD /* AppRootBuilder.swift in Sources */,
-				F5EAA230270B3A7100EF2B70 /* RIBs+Utils.swift in Sources */,
-				F57EBE542738468700FE9319 /* UIImage+Utils.swift in Sources */,
-				F5EAA22B270B3A4500EF2B70 /* TransportHomeBuilder.swift in Sources */,
-				F5EAA21D270B395900EF2B70 /* HomeWidgetModel.swift in Sources */,
-				F5EAA21E270B395900EF2B70 /* AppHomeRouter.swift in Sources */,
-				F5EAA21A270B395900EF2B70 /* AppHomeBuilder.swift in Sources */,
-				F5EAA234270B3A9A00EF2B70 /* UIColor+Utils.swift in Sources */,
-				F5EAA22C270B3A4500EF2B70 /* TransportHomeInteractor.swift in Sources */,
-				F5829F7726DB34AA00BFA8CD /* AppRootInteractor.swift in Sources */,
-				F5EAA22D270B3A4500EF2B70 /* RideTypeView.swift in Sources */,
-				F5EAA219270B395900EF2B70 /* HomeWidgetView.swift in Sources */,
-				F57F6AFE26DB4CD700C0117D /* RootTabBarController.swift in Sources */,
-				F57F6AEB26DB4A2700C0117D /* FinanceHomeInteractor.swift in Sources */,
-				F5EAA21B270B395900EF2B70 /* AppHomeInteractor.swift in Sources */,
-				F57F6AE826DB4A2700C0117D /* FinanceHomeRouter.swift in Sources */,
-				F57F6AE926DB4A2700C0117D /* FinanceHomeViewController.swift in Sources */,
-				F5829F5926DB2BC400BFA8CD /* AppDelegate.swift in Sources */,
-				F5EAA21C270B395900EF2B70 /* AppHomeViewController.swift in Sources */,
-				F5EAA236270B3AA600EF2B70 /* UIColor+Super.swift in Sources */,
-				F5829F7926DB397300BFA8CD /* AppComponent.swift in Sources */,
-				F57F6AF026DB4A2D00C0117D /* ProfileHomeRouter.swift in Sources */,
-				F57EBE562738468700FE9319 /* UITableView+Utils.swift in Sources */,
-				F57EBE552738468700FE9319 /* Array+Utils.swift in Sources */,
-				F5829F7426DB34AA00BFA8CD /* AppRootRouter.swift in Sources */,
+				02D61BA32A4C8F380030D276 /* SuperPayDashboardViewController.swift in Sources */,
+				02D61BAC2A4C8F380030D276 /* AppHomeRouter.swift in Sources */,
+				02D61B972A4C8F380030D276 /* ProfileHomeBuilder.swift in Sources */,
+				02D61BA72A4C8F380030D276 /* FinanceHomeInteractor.swift in Sources */,
+				02D61B982A4C8F380030D276 /* ProfileHomeViewController.swift in Sources */,
+				02D61BB82A4C8F380030D276 /* TransportHomeInteractor.swift in Sources */,
+				02D61BB22A4C8F380030D276 /* AppRootBuilder.swift in Sources */,
+				02D61BB12A4C8F380030D276 /* AppRootInteractor.swift in Sources */,
+				02D61B962A4C8F380030D276 /* ProfileHomeRouter.swift in Sources */,
+				02D61BAB2A4C8F380030D276 /* AppHomeInteractor.swift in Sources */,
+				02D61BAA2A4C8F380030D276 /* FinanceHomeBuilder.swift in Sources */,
+				02D61BB92A4C8F380030D276 /* RideTypeView.swift in Sources */,
+				02D61BA42A4C8F380030D276 /* SuperPayDashboardBuilder.swift in Sources */,
+				02D61BAD2A4C8F380030D276 /* AppHomeBuilder.swift in Sources */,
+				02D61BAE2A4C8F380030D276 /* HomeWidgetModel.swift in Sources */,
+				02D61B952A4C8F380030D276 /* AppDelegate.swift in Sources */,
+				02D61BA02A4C8F380030D276 /* Array+Utils.swift in Sources */,
+				02D61B942A4C8F380030D276 /* AppComponent.swift in Sources */,
+				02D61BA82A4C8F380030D276 /* FinanceHomeViewController.swift in Sources */,
+				02D61BB02A4C8F380030D276 /* AppHomeViewController.swift in Sources */,
+				02D61B9D2A4C8F380030D276 /* UIColor+Utils.swift in Sources */,
+				02D61BB72A4C8F380030D276 /* TransportHomeBuilder.swift in Sources */,
+				02D61BA22A4C8F380030D276 /* SuperPayDashboardInteractor.swift in Sources */,
+				02D61BB42A4C8F380030D276 /* AppRootRouter.swift in Sources */,
+				02D61B9B2A4C8F380030D276 /* UIColor+Super.swift in Sources */,
+				02D61B9A2A4C8F380030D276 /* PushModalPresentationController.swift in Sources */,
+				02D61BB32A4C8F380030D276 /* RootTabBarController.swift in Sources */,
+				02D61BA62A4C8F380030D276 /* FinanceHomeRouter.swift in Sources */,
+				02D61BB62A4C8F380030D276 /* TransportHomeRouter.swift in Sources */,
+				02D61B9C2A4C8F380030D276 /* UIView+Utils.swift in Sources */,
+				02D61B9E2A4C8F380030D276 /* RIBs+Utils.swift in Sources */,
+				02D61BA52A4C8F380030D276 /* SuperPayDashboardRouter.swift in Sources */,
+				02D61BA12A4C8F380030D276 /* UIImage+Utils.swift in Sources */,
+				02D61B992A4C8F380030D276 /* ProfileHomeInteractor.swift in Sources */,
+				02D61BB52A4C8F380030D276 /* TransportHomeViewController.swift in Sources */,
+				02D61BAF2A4C8F380030D276 /* HomeWidgetView.swift in Sources */,
+				02D61B9F2A4C8F380030D276 /* UITableView+Utils.swift in Sources */,
+				02D61BBA2A4C8F380030D276 /* SuperPayView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,6 +572,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		02D61B5C2A4C8F000030D276 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = exactVersion;
+				version = 6.6.0;
+			};
+		};
 		F5829F6C26DB2DE900BFA8CD /* XCRemoteSwiftPackageReference "ModernRIBs" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/DevYeom/ModernRIBs";
@@ -544,6 +591,21 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		02D61B5D2A4C8F000030D276 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 02D61B5C2A4C8F000030D276 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		02D61B5F2A4C8F000030D276 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 02D61B5C2A4C8F000030D276 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		02D61B612A4C8F000030D276 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 02D61B5C2A4C8F000030D276 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
 		F5829F6D26DB2DE900BFA8CD /* ModernRIBs */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F5829F6C26DB2DE900BFA8CD /* XCRemoteSwiftPackageReference "ModernRIBs" */;
